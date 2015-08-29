@@ -20,7 +20,7 @@ namespace DataCollectorWorkerRole
         public override void Run()
         {
             Trace.TraceInformation("DataCollectorWorkerRole is running");
-
+       
             try
             {
                 this.RunAsync(this.cancellationTokenSource.Token).Wait();
